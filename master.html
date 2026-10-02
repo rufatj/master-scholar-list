@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>University &amp; Scholarship Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--panel:#0c0c0c;--line:#262626;--txt:#fff;--mut:#8c8c8c;--gold:#c9a86a}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--txt);font-family:Jost,"Helvetica Neue",Arial,sans-serif;font-size:14px;letter-spacing:.02em}
+body{display:flex;flex-direction:column;height:100vh;height:100dvh;overflow:hidden}
+.un{font-family:"Cormorant Garamond",Georgia,serif;font-size:20px;font-weight:600;letter-spacing:.01em}
+button,input,select,textarea{font:inherit;color:var(--txt)}
+header{padding:22px 24px 8px 84px;min-height:84px}
+h1{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:40px;letter-spacing:.03em;line-height:1.1}
+.stats{color:var(--mut);margin-top:6px}.stats b{color:var(--gold);font-weight:600}
+#gear{position:fixed;left:20px;top:20px;width:46px;height:46px;border-radius:50%;background:var(--bg);border:1px solid var(--line);cursor:pointer;z-index:30;display:grid;place-items:center}
+#gear:hover,#gear:focus-visible{border-color:var(--gold)}
+#gear svg{width:22px;height:22px;stroke:var(--txt);fill:none;stroke-width:1.6}
+.bar{display:flex;flex-wrap:wrap;gap:10px;padding:14px 24px}
+.bar input,.bar select,textarea{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:9px 12px;outline:none}
+.bar input:focus,.bar select:focus,textarea:focus{border-color:var(--gold)}
+.bar input{flex:1;min-width:200px}
+.bar option{background:#000}
+.wrap{margin:0 24px;flex:1;min-height:0;border:1px solid var(--line);border-bottom:0;border-radius:10px 10px 0 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:1280px}
+th{position:sticky;top:0;background:#0a0a0a;text-align:left;padding:14px 12px;border-bottom:1px solid var(--gold);font-weight:500;color:var(--gold);white-space:nowrap;z-index:2;letter-spacing:.08em}
+td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--rb,transparent)}
+tr.r td:first-child{border-left:3px solid var(--rc,transparent)}
+tr.r{cursor:pointer}tr.r:hover td{box-shadow:inset 0 0 0 999px rgba(255,255,255,.05)}
+.mut{color:var(--mut)}
+.st{width:34px;height:34px;border-radius:50%;background:none;border:1px solid var(--line);cursor:pointer;font-size:16px}
+.st:hover{border-color:var(--gold)}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:2px 10px;margin:0 4px 4px 0;font-size:12px}
+.meter{width:110px;height:6px;background:#1c1c1c;border-radius:4px;overflow:hidden;margin-top:6px}
+.meter i{display:block;height:100%}
+.days{font-size:12px;margin-top:4px}
+.empty{padding:60px;text-align:center;color:var(--mut)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;z-index:40}
+.ov.on{display:block}
+#drawer{position:fixed;left:0;top:0;bottom:0;width:400px;max-width:94vw;background:var(--panel);border-right:1px solid var(--line);transform:translateX(-100%);transition:transform .25s;z-index:50;overflow:auto;padding:22px}
+#drawer.on{transform:none}
+#drawer h2,#m h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;margin:0 0 4px;font-size:28px}
+#drawer h3{margin:22px 0 8px;font-size:13px;color:var(--gold);font-weight:600}
+.btn{display:block;width:100%;text-align:center;background:none;border:1px solid var(--line);border-radius:8px;padding:10px;cursor:pointer;margin-top:8px}
+.btn:hover{border-color:var(--gold)}
+.btn.gold{background:var(--gold);color:#000;border-color:var(--gold);font-weight:600}
+input[type=file]{display:none}
+textarea{width:100%;min-height:130px;resize:vertical;font-family:Consolas,monospace;font-size:12px}
+#msg{margin-top:12px;color:var(--gold);min-height:18px}
+#m{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(780px,94vw);max-height:90vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px;z-index:60;display:none}
+#m.on{display:block}
+.x{position:absolute;right:16px;top:12px;background:none;border:0;font-size:26px;cursor:pointer;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0}
+.grid small{display:block;color:var(--mut);margin-bottom:3px}
+.warn{border:1px solid #5a1f1f;background:#1a0a0a;border-radius:8px;padding:10px 14px;margin:10px 0;color:#ff9b9b}
+.det{white-space:pre-wrap;line-height:1.65;margin:14px 0}
+.sts{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.sts button{background:none;border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer}
+a{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+<button id="gear" aria-label="Settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+<header><h1>University &amp; Scholarship Search</h1><div class="stats" id="stats"></div></header>
+<div class="bar">
+<input id="q" placeholder="Search university, program, country, notes">
+<select id="fc"></select><select id="fd"></select><select id="ff"></select>
+<select id="fi"><option value="">English test: any</option><option value="yes">IELTS required</option><option value="no">IELTS not required</option><option value="moi">MOI accepted</option><option value="nomoi">MOI not accepted</option></select>
+<select id="fu"><option value="">Funding: any</option><option>Full</option><option>Partial</option><option>Stipend</option><option>None</option></select>
+<select id="fs"><option value="">Status: any</option></select>
+<select id="so"><option value="dl">Sort: nearest deadline</option><option value="ce">Sort: easiest first</option><option value="ch">Sort: hardest first</option><option value="ac">Sort: highest acceptance</option><option value="nm">Sort: name</option></select>
+</div>
+<div class="wrap"><table><thead><tr>
+<th>Status</th><th>University</th><th>Program</th><th>Country</th><th>Degree</th><th>Field</th><th>Next deadline</th><th>IELTS / MOI</th><th>GPA</th><th>Rec. letters</th><th>Competition</th><th>Acceptance</th><th>Funding</th></tr></thead><tbody id="tb"></tbody></table></div>
+
+<div class="ov" id="ov"></div>
+<aside id="drawer" aria-label="Settings">
+<h2>Settings</h2><div class="mut" id="cnt"></div>
+<h3>Database file</h3>
+<label class="btn gold" for="fr">Upload .txt (replace everything)</label><input type="file" id="fr" accept=".txt,.json,text/plain">
+<label class="btn" for="fm">Upload .txt (add to current)</label><input type="file" id="fm" accept=".txt,.json,text/plain">
+<button class="btn" id="dl">Download current database .txt</button>
+<h3>Add new data</h3>
+<textarea id="pa" placeholder="Paste the JSON code from your AI here"></textarea>
+<button class="btn gold" id="pm">Add pasted data to database</button>
+<h3>AI prompt</h3>
+<div class="mut">Copy it, send it to any AI, then send your notes. Paste the answer above.</div>
+<button class="btn" id="cp">Copy AI prompt</button>
+<h3>Danger zone</h3>
+<button class="btn" id="cl">Clear database</button>
+<div id="msg"></div>
+</aside>
+<div id="m"></div>
+
+<script>
+const PROMPT=`You are my university database builder. I will send raw notes about universities, scholarships, master and PhD programs. My notes are usually in Azerbaijani, sometimes mixed with English.
+
+Convert every program into ONE JSON object. Reply with ONLY a JSON array inside a single code block. No commentary before or after.
+
+Rules:
+1. All values in English. Translate from my notes.
+2. Never invent facts. Unknown value: null. Empty list: [].
+3. Use straight double quotes only. Valid JSON, no trailing commas.
+4. Dates in ISO format YYYY-MM-DD. If only a month is known use the last day of that month and say so in the deadline label.
+5. One object per program. If a university has several programs, create several objects. Several deadlines go into the deadlines list.
+6. id is unique, lowercase, hyphenated, like twente-msc-chemical-science-engineering.
+7. degree is one of: "MSc", "PhD", "MSc+PhD", "Scholarship", "Exchange".
+8. field is an array with one or more of: "Chemical Engineering", "Process Engineering", "IT", "Other".
+9. competition is an integer from 1 to 100, higher means harder to get in. Estimate from my wording: low 10-30, medium 40-60, medium-high 60-75, high 75-90, extreme 90-100.
+10. acceptance_rate is a percent number if I gave it, otherwise null.
+11. ielts_required is true, false or null. moi_accepted is true if a Medium of Instruction certificate (previous degree taught in English) can replace the English test, false if it is not accepted, null if unknown. english_waiver is a short text with the exact waiver condition or null. other_english_tests is a list like ["TOEFL 90", "Duolingo 120"] or [].
+12. summary is 1-2 sentences. details is a full English write-up of everything in my notes (character of the program, rules, tips, requirements). Put every hard rule or risk into warnings as separate short strings too.
+13. funding_type is one of "Full", "Partial", "Stipend", "None" or null. gre_required and interview_required are true, false or null. application_fee is text like "EUR 100" or null. intake is text like "September 2027" or null. apply_link is the application URL or null.
+
+Schema:
+[
+{
+"id": "twente-msc-chemical-science-engineering",
+"university": "University of Twente",
+"program": "MSc Chemical Science & Engineering",
+"country": "Netherlands",
+"city": "Enschede",
+"degree": "MSc",
+"field": ["Chemical Engineering"],
+"website": null,
+"deadlines": [{"label": "NL Scholarship", "date": "2027-04-01"}, {"label": "General admission", "date": "2027-05-01"}],
+"ielts_required": true,
+"ielts_overall": 6.5,
+"ielts_band_min": 6.0,
+"moi_accepted": null,
+"english_waiver": null,
+"other_english_tests": [],
+"gpa_min": null,
+"recommendation_letters": null,
+"documents": ["CV", "Motivation letter", "Transcript", "Diploma", "IELTS certificate"],
+"funding": null,
+"funding_type": null,
+"application_fee": null,
+"gre_required": null,
+"interview_required": null,
+"intake": null,
+"apply_link": null,
+"tuition": null,
+"duration": null,
+"competition": 68,
+"acceptance_rate": null,
+"summary": "Research oriented program with strong practical engineering focus.",
+"details": "Full detailed text here.",
+"warnings": ["Application is not processed without a language certificate."]
+}
+]
+
+If I send more notes later, output only the new objects in the same format.`;
+
+const SAMPLE={id:"twente-msc-chemical-science-engineering",university:"University of Twente",program:"MSc Chemical Science & Engineering",country:"Netherlands",city:"Enschede",degree:"MSc",field:["Chemical Engineering"],website:null,deadlines:[{label:"NL Scholarship",date:"2027-04-01"},{label:"General admission",date:"2027-05-01"}],ielts_required:true,ielts_overall:6.5,ielts_band_min:6.0,documents:["Language certificate"],competition:68,acceptance_rate:null,summary:"Research oriented program with strong practical engineering focus.",details:"Medium to high competition. The program is research oriented and puts a lot of weight on practical engineering.",warnings:["Twente does not process the application without a language certificate. IELTS 6.5 overall with at least 6.0 in every section is mandatory."]};
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const slug=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const ST={none:{i:'○',c:'#777',l:'Not started',bg:'transparent',rc:'transparent'},applied:{i:'✓',c:'#3ddc84',l:'Applied',bg:'rgba(61,220,132,.11)',rc:'#3ddc84'},waiting:{i:'⏳',c:'#f5c542',l:'Waiting for result',bg:'rgba(245,197,66,.11)',rc:'#f5c542'},accepted:{i:'★',c:'#5aa9ff',l:'Accepted',bg:'rgba(90,169,255,.14)',rc:'#5aa9ff'},skipped:{i:'✕',c:'#ff4d4d',l:'Not applying',bg:'rgba(255,77,77,.11)',rc:'#ff4d4d'}};
+const ORDER=Object.keys(ST);
+let db=[],status={};
+
+function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+const saveAll=()=>{ls('uni_db',db);ls('uni_status',status)};
+
+function extract(text){
+  text=text.replace(/^\uFEFF/,'').replace(/```(?:json)?/gi,'');
+  const out=[];let bad=0,depth=0,start=-1,inStr=false,skip=false;
+  for(let i=0;i<text.length;i++){
+    const ch=text[i];
+    if(inStr){if(skip)skip=false;else if(ch==='\\')skip=true;else if(ch==='"')inStr=false;continue}
+    if(ch==='"'&&depth>0){inStr=true;continue}
+    if(ch==='{'){if(depth===0)start=i;depth++}
+    else if(ch==='}'&&depth>0){depth--;if(depth===0){
+      const chunk=text.slice(start,i+1).replace(/,\s*([}\]])/g,'$1');
+      try{out.push(JSON.parse(chunk))}catch(e){bad++}}}
+  }
+  return {out,bad};
+}
+function norm(o){
+  if(!o||typeof o!=='object'||!o.university)return null;
+  const arr=v=>Array.isArray(v)?v.filter(x=>x!=null&&x!=='').map(String):(v?[String(v)]:[]);
+  const num=v=>{const n=parseFloat(v);return isFinite(n)?n:null};
+  const u=Object.assign({},o);
+  u.university=String(o.university);u.program=String(o.program||'');
+  u.id=o.id?String(o.id):slug(u.university+' '+u.program);
+  u.field=arr(o.field);u.documents=arr(o.documents);u.warnings=arr(o.warnings);
+  u.deadlines=(Array.isArray(o.deadlines)?o.deadlines:[]).filter(d=>d&&d.date).map(d=>({label:String(d.label||'Deadline'),date:String(d.date)}));
+  u.competition=num(o.competition);u.acceptance_rate=num(o.acceptance_rate);
+  const tri=v=>(v===true||/^(true|yes)$/i.test(v))?true:(v===false||/^(false|no)$/i.test(v))?false:null;
+  u.ielts_required=tri(o.ielts_required);u.moi_accepted=tri(o.moi_accepted);u.gre_required=tri(o.gre_required);u.interview_required=tri(o.interview_required);u.other_english_tests=arr(o.other_english_tests);
+  return u;
+}
+function addData(list,replace){
+  const ok=list.map(norm).filter(Boolean);
+  if(!ok.length)return 'No valid entries found. Nothing changed.';
+  let add=0,upd=0;
+  if(replace)db=[];
+  ok.forEach(u=>{const i=db.findIndex(x=>x.id===u.id);if(i>=0){db[i]=u;upd++}else{db.push(u);add++}});
+  saveAll();refresh();
+  return (replace?'Database replaced. ':'')+add+' added, '+upd+' updated.';
+}
+function handle(text,replace){
+  const r=extract(text);let m=addData(r.out,replace);
+  if(r.bad)m+=' '+r.bad+' block(s) could not be read.';
+  return m;
+}
+const stOf=u=>status[u.id]||'none';
+
+function nextDl(u){
+  const today=new Date();today.setHours(0,0,0,0);
+  const ds=u.deadlines.filter(d=>/^\d{4}-\d{2}-\d{2}/.test(d.date)).map(d=>({label:d.label,date:d.date,t:new Date(d.date.slice(0,10)+'T00:00:00')})).sort((a,b)=>a.t-b.t);
+  const up=ds.find(d=>d.t>=today);
+  if(up)return {d:up,days:Math.round((up.t-today)/864e5)};
+  if(ds.length)return {d:ds[ds.length-1],days:-1,passed:true};
+  return null;
+}
+const dayTxt=n=>n.passed?['Passed','#777']:[n.days===0?'Today':n.days+' days left',n.days<=14?'#ff4d4d':n.days<=45?'#f5c542':'#3ddc84'];
+const hue=p=>'hsl('+Math.round(120*(1-Math.min(Math.max(p,0),100)/100))+',70%,50%)';
+const hueAcc=p=>'hsl('+Math.round(120*Math.min(p,50)/50)+',70%,50%)';
+const meter=(p,col)=>p==null?'<span class="mut">n/a</span>':'<b>'+p+'%</b><div class="meter"><i style="width:'+Math.min(p,100)+'%;background:'+col+'"></i></div>';
+const ielts=u=>(u.ielts_required===true?'Required'+(u.ielts_overall?' '+u.ielts_overall:'')+(u.ielts_band_min?'<div class="mut">min '+u.ielts_band_min+' each</div>':''):u.ielts_required===false?'Not required':'<span class="mut">n/a</span>')+(u.moi_accepted===true?'<div style="color:#3ddc84">MOI accepted</div>':u.moi_accepted===false?'<div style="color:#ff4d4d">MOI not accepted</div>':'');
+const FC={Full:'#3ddc84',Stipend:'#3ddc84',Partial:'#f5c542',None:'#ff4d4d'};
+const fund=u=>u.funding_type?'<span style="color:'+(FC[u.funding_type]||'#fff')+'">'+esc(u.funding_type)+'</span>':'<span class="mut">n/a</span>';
+
+function fill(id,label,vals){
+  const el=$(id),cur=el.value;
+  el.innerHTML='<option value="">'+label+'</option>'+[...new Set(vals)].filter(Boolean).sort().map(v=>'<option>'+esc(v)+'</option>').join('');
+  el.value=[...el.options].some(o=>o.value===cur)?cur:'';
+}
+function refresh(){
+  fill('#fc','Country: any',db.map(u=>u.country));
+  fill('#fd','Degree: any',db.map(u=>u.degree));
+  fill('#ff','Field: any',db.flatMap(u=>u.field));
+  const s=$('#fs'),cur=s.value;
+  s.innerHTML='<option value="">Status: any</option>'+ORDER.map(k=>'<option value="'+k+'">'+ST[k].l+'</option>').join('');s.value=cur;
+  $('#cnt').textContent=db.length+' programs in database';
+  render();
+}
+function render(){
+  const fu=$('#fu').value,q=$('#q').value.toLowerCase(),fc=$('#fc').value,fd=$('#fd').value,ff=$('#ff').value,fi=$('#fi').value,fs=$('#fs').value,so=$('#so').value;
+  let l=db.filter(u=>{
+    if(q&&!JSON.stringify(u).toLowerCase().includes(q))return false;
+    if(fc&&u.country!==fc)return false;
+    if(fd&&u.degree!==fd)return false;
+    if(ff&&!u.field.includes(ff))return false;
+    if(fi==='yes'&&u.ielts_required!==true)return false;
+    if(fi==='no'&&u.ielts_required!==false)return false;
+    if(fi==='moi'&&u.moi_accepted!==true)return false;
+    if(fi==='nomoi'&&u.moi_accepted!==false)return false;
+    if(fu&&u.funding_type!==fu)return false;
+    if(fs&&stOf(u)!==fs)return false;
+    return true;
+  });
+  const dk=u=>{const n=nextDl(u);return n?(n.passed?1e6:n.days):2e6};
+  const cmp={dl:(a,b)=>dk(a)-dk(b),ce:(a,b)=>(a.competition??999)-(b.competition??999),ch:(a,b)=>(b.competition??-1)-(a.competition??-1),ac:(a,b)=>(b.acceptance_rate??-1)-(a.acceptance_rate??-1),nm:(a,b)=>a.university.localeCompare(b.university)};
+  l.sort(cmp[so]);
+  const applied=db.filter(u=>['applied','waiting','accepted'].includes(stOf(u))).length;
+  const soon=db.filter(u=>{const n=nextDl(u);return n&&!n.passed&&n.days<=30}).length;
+  $('#stats').innerHTML='<b>'+db.length+'</b> programs &nbsp; <b>'+applied+'</b> applied &nbsp; <b>'+soon+'</b> deadlines within 30 days &nbsp; showing <b>'+l.length+'</b>';
+  $('#tb').innerHTML=l.length?l.map(u=>{
+    const s=ST[stOf(u)],n=nextDl(u),dt=n?dayTxt(n):null,id=esc(u.id);
+    return '<tr class="r" data-id="'+id+'" style="--rb:'+s.bg+';--rc:'+s.rc+'"><td><button class="st" data-st="'+id+'" title="'+s.l+'" style="color:'+s.c+';border-color:'+s.c+'">'+s.i+'</button></td>'+
+    '<td style="min-width:200px"><span class="un">'+esc(u.university)+'</span><div class="mut">'+esc(u.city)+'</div></td>'+
+    '<td style="min-width:220px">'+esc(u.program)+'<div class="mut" style="max-width:280px">'+esc(u.summary)+'</div></td>'+
+    '<td>'+esc(u.country)+'</td><td>'+esc(u.degree)+'</td><td>'+u.field.map(f=>'<span class="chip">'+esc(f)+'</span>').join('')+'</td>'+
+    '<td style="min-width:150px">'+(n?esc(n.d.date)+'<div class="mut">'+esc(n.d.label)+'</div><div class="days" style="color:'+dt[1]+'">'+dt[0]+'</div>':'<span class="mut">n/a</span>')+'</td>'+
+    '<td style="min-width:110px">'+ielts(u)+'</td><td>'+esc(u.gpa_min==null?'n/a':u.gpa_min)+'</td><td>'+esc(u.recommendation_letters==null?'n/a':u.recommendation_letters)+'</td>'+
+    '<td>'+meter(u.competition,u.competition==null?'':hue(u.competition))+'</td><td>'+meter(u.acceptance_rate,u.acceptance_rate==null?'':hueAcc(u.acceptance_rate))+'</td><td>'+fund(u)+'</td></tr>';
+  }).join(''):'<tr><td colspan="13" class="empty">No programs found. Open settings on the left to upload your database file.</td></tr>';
+}
+function detail(id){
+  const u=db.find(x=>x.id===id);if(!u)return;
+  const n=nextDl(u),cur=stOf(u);
+  const ap=u.apply_link&&/^https?:\/\//i.test(u.apply_link)?'<a href="'+esc(u.apply_link)+'" target="_blank" rel="noopener">Open application page</a>':null;
+  const yn=v=>v==null?null:v?'Required':'Not required';
+  const kv=(k,v)=>v==null||v===''?'':'<div><small>'+k+'</small>'+v+'</div>';
+  const url=u.website&&/^https?:\/\//i.test(u.website)?'<a href="'+esc(u.website)+'" target="_blank" rel="noopener">'+esc(u.website)+'</a>':null;
+  $('#m').innerHTML='<button class="x" data-close aria-label="Close">×</button><h2>'+esc(u.university)+'</h2><div class="mut">'+esc(u.program)+' &nbsp; '+esc(u.city)+(u.city&&u.country?', ':'')+esc(u.country)+'</div>'+
+  '<div class="sts">'+ORDER.map(k=>'<button data-set="'+k+'" data-id="'+esc(u.id)+'" style="'+(k===cur?'color:'+ST[k].c+';border-color:'+ST[k].c+';background:'+ST[k].bg:'color:var(--mut)')+'">'+ST[k].i+' '+ST[k].l+'</button>').join('')+'</div>'+
+  (u.warnings.map(w=>'<div class="warn">'+esc(w)+'</div>').join(''))+
+  '<div class="det">'+esc(u.details||u.summary||'')+'</div>'+
+  '<div class="grid">'+kv('Degree',esc(u.degree))+kv('Field',u.field.map(esc).join(', '))+kv('IELTS',ielts(u))+kv('Medium of instruction (MOI)',u.moi_accepted===true?'Accepted':u.moi_accepted===false?'Not accepted':null)+kv('English waiver',esc(u.english_waiver))+kv('Other English tests',u.other_english_tests.map(esc).join(', '))+kv('GRE / GMAT',yn(u.gre_required))+kv('Interview',yn(u.interview_required))+kv('Funding type',esc(u.funding_type))+kv('Application fee',esc(u.application_fee))+kv('Intake',esc(u.intake))+kv('Application page',ap)+kv('GPA requirement',esc(u.gpa_min))+kv('Recommendation letters',esc(u.recommendation_letters))+kv('Funding',esc(u.funding))+kv('Tuition',esc(u.tuition))+kv('Duration',esc(u.duration))+kv('Website',url)+kv('Competition',u.competition==null?null:meter(u.competition,hue(u.competition)))+kv('Acceptance rate',u.acceptance_rate==null?null:meter(u.acceptance_rate,hueAcc(u.acceptance_rate)))+'</div>'+
+  (u.deadlines.length?'<small class="mut">Deadlines</small><div style="margin:6px 0 16px">'+u.deadlines.map(d=>{const t=nextDl({deadlines:[d]}),x=t?dayTxt(t):['',''];return '<div>'+esc(d.date)+' &nbsp; '+esc(d.label)+' &nbsp; <span style="color:'+x[1]+'">'+x[0]+'</span></div>'}).join('')+'</div>':'')+
+  (u.documents.length?'<small class="mut">Required documents</small><div style="margin-top:6px">'+u.documents.map(d=>'<span class="chip">'+esc(d)+'</span>').join('')+'</div>':'');
+  $('#m').classList.add('on');$('#ov').classList.add('on');
+}
+function closeAll(){['#m','#drawer','#ov'].forEach(s=>$(s).classList.remove('on'))}
+const msg=t=>$('#msg').textContent=t;
+
+$('#tb').addEventListener('click',e=>{
+  const b=e.target.closest('[data-st]');
+  if(b){e.stopPropagation();const id=b.dataset.st,u=db.find(x=>x.id===id);const i=ORDER.indexOf(stOf(u));status[id]=ORDER[(i+1)%ORDER.length];saveAll();render();return}
+  const r=e.target.closest('tr.r');if(r)detail(r.dataset.id);
+});
+$('#m').addEventListener('click',e=>{
+  if(e.target.closest('[data-close]'))return closeAll();
+  const b=e.target.closest('[data-set]');
+  if(b){status[b.dataset.id]=b.dataset.set;saveAll();render();detail(b.dataset.id)}
+});
+$('#gear').onclick=()=>{$('#drawer').classList.add('on');$('#ov').classList.add('on')};
+$('#ov').onclick=closeAll;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+['q','fc','fd','ff','fi','fu','fs','so'].forEach(id=>$('#'+id).addEventListener('input',render));
+function readFile(inp,replace){inp.onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{msg(handle(t,replace));e.target.value=''})}}
+readFile($('#fr'),true);readFile($('#fm'),false);
+$('#pm').onclick=()=>{const t=$('#pa').value.trim();if(!t)return msg('Paste JSON first.');const m=handle(t,false);msg(m);if(!/^No valid/.test(m))$('#pa').value=''};
+$('#cp').onclick=()=>{
+  const done=()=>msg('Prompt copied.');
+  (navigator.clipboard?navigator.clipboard.writeText(PROMPT):Promise.reject()).then(done).catch(()=>{const t=document.createElement('textarea');t.value=PROMPT;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done()});
+};
+$('#dl').onclick=()=>{
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(db,null,2)],{type:'text/plain'}));
+  a.download='universities-database.txt';a.click();URL.revokeObjectURL(a.href);msg('Database downloaded.');
+};
+$('#cl').onclick=()=>{if(confirm('Delete all programs from this browser? Your status marks stay saved.')){db=[];saveAll();refresh();msg('Database cleared.')}};
+
+(function init(){
+  const s=ls('uni_db');db=Array.isArray(s)?s:[norm(SAMPLE)];
+  status=ls('uni_status')||{};
+  refresh();
+})();
+</script>
+</body>
+</html>

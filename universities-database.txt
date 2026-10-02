@@ -1,0 +1,820 @@
+[
+  {
+    "id": "tu-delft-msc-chemical-engineering",
+    "university": "TU Delft",
+    "program": "MSc Chemical Engineering",
+    "country": "Netherlands",
+    "city": "Delft",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Justus & Louise Scholarship",
+        "date": "2026-12-01"
+      },
+      {
+        "label": "General admission & other scholarships",
+        "date": "2027-01-15"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 7,
+    "ielts_band_min": null,
+    "moi_accepted": false,
+    "english_waiver": "Initial conditional admission can be granted with an MOI, but the official IELTS score is strictly required for the scholarship by the December 1 deadline.",
+    "other_english_tests": [
+      "TOEFL 100"
+    ],
+    "gpa_min": "85%",
+    "recommendation_letters": 2,
+    "documents": [
+      "Scholarship Essay",
+      "2 Academic recommendation letters"
+    ],
+    "funding": "Tuition fee is fully zeroed + monthly stipend for living expenses (~€26,000 annually).",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 95,
+    "acceptance_rate": null,
+    "summary": "An ultra-competitive, fully funded master's program at one of the world's top technical universities.",
+    "details": "This highly prestigious program attracts thousands of global applicants for the Justus & Louise Scholarship. A GPA of 88 is fully competitive for this rigorous selection process. Candidates must upload a specific Scholarship Essay during the university application. With a November IELTS test, timing is absolutely critical to meet the strict December 1 scholarship deadline, as the digital score must be uploaded immediately upon release.",
+    "warnings": [
+      "Extremely strict December 1 deadline for the Justus & Louise Scholarship.",
+      "MOI is not valid for the scholarship; official IELTS 7.0 must be submitted in time.",
+      "Minimum GPA of 85%+ is strictly enforced."
+    ]
+  },
+  {
+    "id": "tu-eindhoven-msc-chemical-engineering",
+    "university": "TU Eindhoven",
+    "program": "MSc Chemical Engineering",
+    "country": "Netherlands",
+    "city": "Eindhoven",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Admission & Amandus H. Lundqvist Scholarship",
+        "date": "2027-01-15"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6.5,
+    "ielts_band_min": 6,
+    "moi_accepted": false,
+    "english_waiver": "MOI is not valid for scholarship consideration.",
+    "other_english_tests": [],
+    "gpa_min": "85%",
+    "recommendation_letters": 0,
+    "documents": [],
+    "funding": "Tuition fee is fully covered + living expenses paid.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 85,
+    "acceptance_rate": null,
+    "summary": "A premier engineering program in Europe's technology hub offering a fully funded scholarship for top-tier candidates.",
+    "details": "Located in the Brainport region, this program offers the prestigious Amandus H. Lundqvist Scholarship. Recommendation letters are not required; instead, the university automatically nominates the highest-profile admitted students based on academic excellence. An academic average of 88 will automatically place candidates in strong contention. The January 15 deadline provides a very comfortable timeline to submit November IELTS results.",
+    "warnings": [
+      "MOI is not accepted; an official IELTS 6.5 must be in the system by January 15."
+    ]
+  },
+  {
+    "id": "twente-msc-chemical-science-engineering",
+    "university": "University of Twente",
+    "program": "MSc Chemical Science & Engineering",
+    "country": "Netherlands",
+    "city": "Enschede",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "UTS Scholarship Round 1",
+        "date": "2027-02-01"
+      },
+      {
+        "label": "NL Scholarship",
+        "date": "2027-05-01"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6.5,
+    "ielts_band_min": 6,
+    "moi_accepted": false,
+    "english_waiver": null,
+    "other_english_tests": [],
+    "gpa_min": "80%",
+    "recommendation_letters": 0,
+    "documents": [
+      "UTS Essay",
+      "Motivation letter"
+    ],
+    "funding": "€3,000 to €22,000 annually (UTS) or €5,000 one-time (NL Scholarship).",
+    "funding_type": "Partial",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 80,
+    "acceptance_rate": null,
+    "summary": "A competitive engineering degree with multiple high-value partial scholarship options.",
+    "details": "This program offers access to both the University of Twente Scholarship (UTS) and the NL Scholarship. Applying with an 88 GPA exceeds the baseline requirements for these funding opportunities. After securing conditional admission, candidates must apply separately for UTS using a custom essay. Since MOI is strictly rejected, the November IELTS timeline perfectly aligns with the February 1 Round 1 UTS deadline.",
+    "warnings": [
+      "MOI is absolutely not accepted.",
+      "A ready IELTS 6.5 (minimum 6.0 in each section) must be uploaded at the time of application."
+    ]
+  },
+  {
+    "id": "groningen-msc-chemical-engineering",
+    "university": "University of Groningen",
+    "program": "MSc Chemical Engineering",
+    "country": "Netherlands",
+    "city": "Groningen",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "General admission and NL Scholarship",
+        "date": "2027-05-01"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6.5,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "The admissions committee may fully waive the English requirement with a dual diploma MOI certificate.",
+    "other_english_tests": [],
+    "gpa_min": "75%",
+    "recommendation_letters": 2,
+    "documents": [
+      "Motivation letter",
+      "Recommendation letters"
+    ],
+    "funding": "€5,000 one-time payment for the first academic year (NL Scholarship).",
+    "funding_type": "Partial",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 75,
+    "acceptance_rate": null,
+    "summary": "A program strong in green chemistry at a Nobel laureate-affiliated university, featuring flexible English requirements.",
+    "details": "This high-level university specializes in green chemistry and hydrogen. There is excellent flexibility regarding language tests, as the MOI certificate from a French dual diploma program can often replace the IELTS requirement entirely. An 88 GPA offers a significant advantage for securing the €5,000 NL Scholarship, and the May 1 deadline provides abundant time to prepare additional motivation letters.",
+    "warnings": [
+      "If the MOI waiver is rejected, an official IELTS 6.5 must be provided."
+    ]
+  },
+  {
+    "id": "erasmus-chemoinformatics-msc",
+    "university": "Erasmus Mundus Consortium",
+    "program": "MSc ChEMoinformatics",
+    "country": "Europe",
+    "city": null,
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering",
+      "IT"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Mid-January 2027",
+        "date": "2027-01-31"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": null,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "Some Erasmus programs may accept MOI directly due to the French partnership, but an IELTS score is effectively mandatory to win the scholarship competition.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Tuition fee covered + insurance + €1,400 monthly living stipend.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 85,
+    "acceptance_rate": null,
+    "summary": "A fully funded Erasmus Mundus Joint Master Degree in Chemoinformatics.",
+    "details": "This is a Joint Master Degree program across Europe. Portals typically open officially in October or November. While the MOI from UFAZ might be accepted by some institutions due to French partnerships, obtaining an IELTS score in November is critical to realistically compete for and win the full scholarship.",
+    "warnings": [
+      "Must have an IELTS score to be competitive for the scholarship, despite potential MOI acceptance."
+    ]
+  },
+  {
+    "id": "erasmus-mesc-plus-msc",
+    "university": "Erasmus Mundus Consortium",
+    "program": "MSc Materials for Energy Storage (MESC+)",
+    "country": "Europe",
+    "city": null,
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Mid-January 2027",
+        "date": "2027-01-31"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": null,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "Some Erasmus programs may accept MOI directly due to the French partnership, but an IELTS score is effectively mandatory to win the scholarship competition.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Tuition fee covered + insurance + €1,400 monthly living stipend.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 85,
+    "acceptance_rate": null,
+    "summary": "A highly competitive, fully funded Erasmus program focusing on energy storage materials.",
+    "details": "Part of the Erasmus Mundus Joint Master Degrees, this program provides extensive cross-European mobility. Applications generally open around October/November. The funding covers all tuition, insurance, and a generous monthly stipend. Although MOI might be sufficient for basic admission, IELTS is essential for securing the scholarship.",
+    "warnings": [
+      "Must have an IELTS score to be competitive for the scholarship, despite potential MOI acceptance."
+    ]
+  },
+  {
+    "id": "erasmus-sustainable-biomass-msc",
+    "university": "Erasmus Mundus Consortium",
+    "program": "MSc Sustainable Biomass and Bioproducts",
+    "country": "Europe",
+    "city": null,
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering",
+      "Process Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Mid-January 2027",
+        "date": "2027-01-31"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": null,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "Some Erasmus programs may accept MOI directly due to the French partnership, but an IELTS score is effectively mandatory to win the scholarship competition.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Tuition fee covered + insurance + €1,400 monthly living stipend.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 85,
+    "acceptance_rate": null,
+    "summary": "A fully funded Erasmus program dedicated to sustainability and bioproducts.",
+    "details": "This joint master's program is fully funded and requires high competitiveness. Application portals open in October or November. While the Medium of Instruction (MOI) from UFAZ can sometimes substitute for language exams, having a solid IELTS score by November is necessary to stand out for the scholarship.",
+    "warnings": [
+      "Must have an IELTS score to be competitive for the scholarship, despite potential MOI acceptance."
+    ]
+  },
+  {
+    "id": "kth-msc-chemical-engineering",
+    "university": "KTH Royal Institute of Technology",
+    "program": "MSc Chemical Engineering",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "General admission and SISGP Scholarship",
+        "date": "2027-01-15"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6.5,
+    "ielts_band_min": null,
+    "moi_accepted": false,
+    "english_waiver": "Swedish rules are very strict; IELTS is completely mandatory and must be uploaded by January.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Swedish Institute (SI) Scholarship covers full tuition and provides ~12,000 SEK monthly for living expenses.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 85,
+    "acceptance_rate": null,
+    "summary": "A world-renowned chemical engineering program in Sweden with access to the lucrative SI Scholarship.",
+    "details": "KTH offers a globally recognized Chemical Engineering program. Applications open on October 16, 2026, through the centralized University Admissions Sweden portal. Applicants can aim for the Swedish Institute (SI) Scholarship, which provides a full tuition waiver and approximately 12,000 SEK monthly. English requirements are stringent.",
+    "warnings": [
+      "IELTS 6.5 minimum is strictly required and must be uploaded by January.",
+      "MOI is not accepted."
+    ]
+  },
+  {
+    "id": "chalmers-msc-chemical-engineering",
+    "university": "Chalmers University of Technology",
+    "program": "MSc Chemical Engineering",
+    "country": "Sweden",
+    "city": "Gothenburg",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "General admission and SISGP Scholarship",
+        "date": "2027-01-15"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6.5,
+    "ielts_band_min": null,
+    "moi_accepted": false,
+    "english_waiver": "Swedish rules are very strict; IELTS is completely mandatory and must be uploaded by January.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Swedish Institute (SI) Scholarship covers full tuition and provides ~12,000 SEK monthly for living expenses.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 80,
+    "acceptance_rate": null,
+    "summary": "A highly respected Swedish engineering program offering full funding through the SI Scholarship.",
+    "details": "Chalmers provides a top-tier chemical engineering education. The application window opens on October 16, 2026, via University Admissions Sweden. The program is eligible for the Swedish Institute (SI) Scholarship, completely covering tuition and living costs. Strict adherence to English proficiency requirements is enforced.",
+    "warnings": [
+      "IELTS 6.5 minimum is strictly required and must be uploaded by January.",
+      "MOI is not accepted."
+    ]
+  },
+  {
+    "id": "polimi-msc-chemical-engineering",
+    "university": "Politecnico di Milano",
+    "program": "MSc Chemical Engineering",
+    "country": "Italy",
+    "city": "Milan",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Phase 1 (Crucial for international students & scholarships)",
+        "date": "2026-11-30"
+      }
+    ],
+    "ielts_required": false,
+    "ielts_overall": null,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "Italian universities accept the UFAZ MOI document 100%. Applicants can apply immediately without waiting for IELTS.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Platinum/Gold Scholarship - fully zeros tuition fees and grants €5,000 to €10,000 annually for living/dormitory support.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 80,
+    "acceptance_rate": null,
+    "summary": "One of Europe's strongest chemical engineering programs offering generous scholarships and flexible English requirements.",
+    "details": "Politecnico di Milano is among the top universities in Europe for this field. The most critical application window for international students and funding is Phase 1, concluding at the end of November. Because they fully accept the Medium of Instruction (MOI) certificate from UFAZ, candidates can submit their applications right away without waiting for IELTS results. The Platinum and Gold scholarships offer exceptional financial support.",
+    "warnings": [
+      "Must apply during Phase 1 (by the end of November) to maximize scholarship chances."
+    ]
+  },
+  {
+    "id": "eth-zurich-msc-chemical-bioengineering",
+    "university": "ETH Zurich",
+    "program": "MSc Chemical and Bioengineering",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering",
+      "Other"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Application deadline",
+        "date": "2026-12-15"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 7,
+    "ielts_band_min": null,
+    "moi_accepted": false,
+    "english_waiver": null,
+    "other_english_tests": [],
+    "gpa_min": "88",
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Excellence Scholarship (ESOP) provides full tuition coverage and a high monthly living allowance.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 95,
+    "acceptance_rate": null,
+    "summary": "An ultra-competitive program at a global Top 10 university, requiring exceptional academic credentials.",
+    "details": "ETH Zurich is ranked among the top 10 universities globally, making admission exceptionally competitive. Applications open on November 1, 2026. The Excellence Scholarship (ESOP) offers full financial support. Language rules are rigorous, strictly demanding a minimum IELTS score of 7.0. An academic average of 88 is considered strong enough to compete.",
+    "warnings": [
+      "Extremely strict IELTS 7.0 minimum requirement.",
+      "Ultra-competitive Top 10 global university."
+    ]
+  },
+  {
+    "id": "epfl-msc-chemical-bioengineering",
+    "university": "EPFL",
+    "program": "MSc Chemical and Bioengineering",
+    "country": "Switzerland",
+    "city": "Lausanne",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering",
+      "Other"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Application deadline",
+        "date": "2026-12-15"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 7,
+    "ielts_band_min": null,
+    "moi_accepted": false,
+    "english_waiver": null,
+    "other_english_tests": [],
+    "gpa_min": "88",
+    "recommendation_letters": null,
+    "documents": [],
+    "funding": "Excellence Scholarship (ESOP) provides full tuition coverage and a high monthly living allowance.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 95,
+    "acceptance_rate": null,
+    "summary": "A prestigious, world-class Swiss engineering program with highly demanding admission standards.",
+    "details": "EPFL sits consistently in the global top 10 universities. The application period starts November 1, 2026. Students can apply for the prestigious Excellence Scholarship (ESOP), which offers complete funding and a robust living allowance. A strict IELTS score of 7.0 is mandatory for consideration, and a high GPA (e.g., 88) is highly advised to stand a chance.",
+    "warnings": [
+      "Extremely strict IELTS 7.0 minimum requirement.",
+      "Ultra-competitive Top 10 global university."
+    ]
+  },
+  {
+    "id": "polimi-msc-chemical-engineering-merit",
+    "university": "Politecnico di Milano",
+    "program": "MSc Chemical Engineering (Merit Scholarship)",
+    "country": "Italy",
+    "city": "Milan",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Early Bird (Mandatory for Merit Scholarship)",
+        "date": "2026-12-01"
+      },
+      {
+        "label": "Standard Round",
+        "date": "2027-02-28"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "MOI is accepted for initial admission, but an official IELTS 6.0 minimum must be uploaded before classes start next summer.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [
+      "Transcript",
+      "CV",
+      "Motivation letter",
+      "Bachelor diploma or certificate"
+    ],
+    "funding": "Tuition fee is zeroed + EUR 5,000 to EUR 10,000 annual pocket money.",
+    "funding_type": "Full",
+    "application_fee": "EUR 50 (Early Bird), EUR 150 (Standard Round)",
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 90,
+    "acceptance_rate": 28,
+    "summary": "An automatic, highly competitive merit-based scholarship awarded to early bird applicants with outstanding GPAs.",
+    "details": "Applications are submitted online via the PoliMi Online Services portal, where you can select a maximum of two programs. With an 88 GPA and UFAZ's French dual diploma, the chance of university admission is extremely high (85-90%), and the general university acceptance rate is around 28%. However, for the Merit-Based scholarships (Platinum/Gold), competition is very high as you will compete against hundreds of global applicants with 95+ GPAs. You are automatically considered for this scholarship based on your GPA without needing extra documents, provided you apply during the Early Bird period.",
+    "warnings": [
+      "You must apply and pay the EUR 50 fee by December 1 (Early Bird) to be considered for Merit scholarships.",
+      "An official IELTS score of at least 6.0 must be uploaded before classes begin, even though MOI is accepted initially."
+    ]
+  },
+  {
+    "id": "polimi-msc-chemical-engineering-dsu",
+    "university": "Politecnico di Milano",
+    "program": "MSc Chemical Engineering (DSU Scholarship)",
+    "country": "Italy",
+    "city": "Milan",
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Early Bird (Recommended)",
+        "date": "2026-12-01"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6,
+    "ielts_band_min": null,
+    "moi_accepted": true,
+    "english_waiver": "MOI is accepted for initial admission, but an official IELTS 6.0 minimum must be uploaded before classes start next summer.",
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [
+      "Transcript",
+      "CV",
+      "Motivation letter",
+      "Bachelor diploma or certificate",
+      "Official family income and property documents"
+    ],
+    "funding": "Full tuition waiver + free dormitory + 1 free meal per day at the university canteen.",
+    "funding_type": "Full",
+    "application_fee": "EUR 50 (Early Bird), EUR 150 (Standard Round)",
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 10,
+    "acceptance_rate": 99,
+    "summary": "A need-based Italian government scholarship that is almost guaranteed for admitted Azerbaijani students.",
+    "details": "The DSU is a need-based scholarship provided by the Italian government. If you secure master's admission from PoliMi, your chances of winning this scholarship are around 99% because official income levels in Azerbaijan fall well within the required Italian standards. The scholarship fully waives tuition and provides free accommodation and daily meals. You must prepare official documents proving your family's income and property according to strict Italian standards.",
+    "warnings": [
+      "Family income and property documents must be strictly prepared according to Italian standards.",
+      "An official IELTS score of at least 6.0 must be uploaded before classes begin."
+    ]
+  },
+  {
+    "id": "mbzuai-msc-machine-learning",
+    "university": "MBZUAI",
+    "program": "MSc in Machine Learning",
+    "country": "United Arab Emirates",
+    "city": null,
+    "degree": "MSc",
+    "field": [
+      "IT",
+      "Other"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Application deadline",
+        "date": "2026-12-15"
+      }
+    ],
+    "ielts_required": null,
+    "ielts_overall": null,
+    "ielts_band_min": null,
+    "moi_accepted": null,
+    "english_waiver": null,
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [
+      "Statement of Purpose"
+    ],
+    "funding": "Full scholarship + 15,500 AED (approx. 4,220 USD) monthly stipend.",
+    "funding_type": "Full",
+    "application_fee": "AED 200 (approx. 54 USD)",
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 70,
+    "acceptance_rate": null,
+    "summary": "A fully funded master's program focused on algorithm building, deep learning, and neural networks.",
+    "details": "This program requires a STEM bachelor's degree, which a Chemical Engineering diploma fully satisfies. It focuses heavily on direct coding and software. An applicant with a Chemical Engineering background and an 88 GPA has a high chance of admission, especially if they have Python programming experience, as it helps in applying ML models to optimize chemical reactors and processes. The mathematical foundation required includes linear algebra and optimization math. Applicants must take an internal online Screening Exam.",
+    "warnings": [
+      "An application fee of AED 200 must be paid immediately after taking the online Screening Exam.",
+      "The application fee is only waived if you score 75% or higher on the Screening Exam (or refunded if you enroll).",
+      "A STEM bachelor's degree is strictly required."
+    ]
+  },
+  {
+    "id": "mbzuai-msc-statistics-data-science",
+    "university": "MBZUAI",
+    "program": "MSc in Statistics and Data Science",
+    "country": "United Arab Emirates",
+    "city": null,
+    "degree": "MSc",
+    "field": [
+      "IT",
+      "Other"
+    ],
+    "website": null,
+    "deadlines": [
+      {
+        "label": "Application deadline",
+        "date": "2026-12-15"
+      }
+    ],
+    "ielts_required": null,
+    "ielts_overall": null,
+    "ielts_band_min": null,
+    "moi_accepted": null,
+    "english_waiver": null,
+    "other_english_tests": [],
+    "gpa_min": null,
+    "recommendation_letters": null,
+    "documents": [
+      "Statement of Purpose"
+    ],
+    "funding": "Full scholarship + 15,500 AED (approx. 4,220 USD) monthly stipend.",
+    "funding_type": "Full",
+    "application_fee": "AED 200 (approx. 54 USD)",
+    "gre_required": null,
+    "interview_required": null,
+    "intake": null,
+    "apply_link": null,
+    "tuition": null,
+    "duration": null,
+    "competition": 65,
+    "acceptance_rate": null,
+    "summary": "A fully funded master's program focusing on big data analysis, statistics, probability theory, and forecasting.",
+    "details": "This program requires a STEM bachelor's degree. A Chemical Engineering graduate with an 88 GPA has a very high chance of admission because the strong mathematical background (differential equations, linear algebra, calculus) aligns perfectly with the program's requirements. The transition to Data Science is considered smoother for chemical engineers since concepts like mass/energy balance and thermodynamics are similar to working with big data and analytical modeling. The program focuses on predicting new materials or catalysts from lab and industrial data. Candidates must complete an internal online Screening Exam.",
+    "warnings": [
+      "An application fee of AED 200 must be paid immediately after taking the online Screening Exam.",
+      "The application fee is only waived if you score 75% or higher on the Screening Exam (or refunded if you enroll).",
+      "A STEM bachelor's degree is strictly required."
+    ]
+  },
+  {
+    "id": "bioceb-erasmus-mundus-msc-biological-chemical-engineering",
+    "university": "Bioceb Consortium: AgroParisTech, Aalto University, TalTech, Universite de Liege, Universite de Reims Champagne-Ardenne",
+    "program": "European Master in Biological and Chemical Engineering for a Sustainable Bioeconomy (Bioceb)",
+    "country": "France, Finland, Estonia, Belgium",
+    "city": null,
+    "degree": "MSc",
+    "field": [
+      "Chemical Engineering",
+      "Process Engineering",
+      "Other"
+    ],
+    "website": "https://www.bioceb.eu/",
+    "deadlines": [
+      {
+        "label": "2027-2029 application opening",
+        "date": "2026-11-03"
+      }
+    ],
+    "ielts_required": true,
+    "ielts_overall": 6.5,
+    "ielts_band_min": 6,
+    "moi_accepted": false,
+    "english_waiver": "An English test is not required only if the applicant has earned a degree in an English-medium programme at a higher education institution of applied sciences in an EU/EEA country, or in an English-speaking country where English is an official language. A university certificate is required.",
+    "other_english_tests": [
+      "TOEFL iBT 92 with 22 in writing",
+      "TOEFL PDT with Reading 22, Listening 22 and Writing 24",
+      "Cambridge C1 Advanced A, B or C",
+      "Cambridge C2 Proficiency A, B, C or Level C1",
+      "PTE Academic 62 with 54 in writing"
+    ],
+    "gpa_min": null,
+    "recommendation_letters": 2,
+    "documents": [
+      "Valid passport",
+      "CV",
+      "Motivation letter",
+      "Bachelor's degree or temporary certificate",
+      "Official transcripts for each year of the Bachelor's degree",
+      "Official English translations where applicable",
+      "Two recommendation letters",
+      "Proof of English proficiency",
+      "High school diploma and/or transcripts",
+      "Official documents covering the past five years if not covered by the latest diploma"
+    ],
+    "funding": "Erasmus Mundus scholarships are available. The scholarship covers participation costs and provides a subsistence allowance of EUR 1,400 per month for up to 24 months, with a maximum value of EUR 33,600. Bioceb states that 50 EMJM scholarships are available across the full project period, approximately 12 per cohort, with additional scholarships potentially available for targeted world regions.",
+    "funding_type": "Full",
+    "application_fee": null,
+    "gre_required": false,
+    "interview_required": true,
+    "intake": "2027",
+    "apply_link": "https://forge.bioceb.eu/Application-procedure.html",
+    "tuition": "EUR 9,000/year for non-EU students; EUR 4,500/year for EU students according to the published programme brochure",
+    "duration": "2 years, 120 ECTS",
+    "competition": 92,
+    "acceptance_rate": null,
+    "summary": "A highly selective two-year Erasmus Mundus Joint Master focused on biological and chemical engineering, biotechnology, bioprocess design, biobased products and sustainable bioeconomy. Chemical Engineering is a relevant background, but applicants need an engineering or science Bachelor's degree of at least 180 ECTS including at least one discipline related to biology.",
+    "details": "Bioceb is a two-year international Erasmus Mundus Joint Master delivered by a consortium of five European universities: AgroParisTech in France, Aalto University in Finland, Tallinn University of Technology in Estonia, Universite de Liege in Belgium and Universite de Reims Champagne-Ardenne in France. The programme provides interdisciplinary training in biotechnology, biological resource use, bioprocess design and upscaling, biobased products engineering, green chemistry and sustainable value chains. The programme is taught in English and leads to multiple national Master's degrees depending on the selected study track. Applicants need a Bachelor's degree or equivalent of at least 180 ECTS in engineering or science, including at least one discipline related to biology. Students who have not yet completed their Bachelor's degree may apply if they provide an official university document confirming that they are in the final year and stating the expected graduation date. The application requires a valid passport, CV, motivation letter, degree or temporary certificate, transcripts for every year of the Bachelor's degree, two recommendation letters, proof of English proficiency, high school documents and documents covering the previous five years when required. The motivation letter is important and should explain why Bioceb fits the applicant's previous studies, projects and future career plans. Applicants indicate preferences among five study tracks, but the consortium makes the final mobility and track assignment. Physical mobility is compulsory: students must complete study periods in at least two countries different from their country of residence at enrolment. The first semester is at Universite de Reims Champagne-Ardenne in France. Depending on the study track, later semesters include AgroParisTech in France, TalTech in Estonia, Aalto University in Finland and/or Universite de Liege in Belgium. A summer school in Estonia is mandatory. The programme is highly selective and the consortium states that a cohort has a maximum of 25 students. The current official application page states that the 2026-2028 campaign is closed. A new 2027-2029 application campaign was announced for opening on November 3, 2026, but the exact application deadline and final 2027-2029 scholarship details were not yet published in the official sources checked. Therefore the deadline should be updated once the new call is released. For the currently published English requirements, IELTS Academic requires 6.5 overall with at least 6.0 in Writing. An English-medium degree does not automatically waive the test for an Azerbaijani degree: the published waiver is limited to degrees earned in an EU/EEA country or an English-speaking country where English is an official language, subject to university certification. EMJM scholarships cover participation costs and provide EUR 1,400 per month for up to 24 months. Scholarship applications are submitted together with the Bioceb application.",
+    "warnings": [
+      "The exact 2027-2029 application deadline is not yet published in the official sources checked.",
+      "The application campaign is highly selective and the cohort is limited to a maximum of 25 students.",
+      "The applicant must have an engineering or science Bachelor's degree of at least 180 ECTS including at least one discipline related to biology.",
+      "Applicants still completing their Bachelor's degree must provide official confirmation of final-year status and expected graduation date.",
+      "Two recommendation letters are required.",
+      "IELTS Academic requires 6.5 overall and at least 6.0 in Writing.",
+      "An English-medium Bachelor's degree from Azerbaijan does not qualify for the published English-test exemption.",
+      "Physical mobility in at least two countries different from the applicant's country of residence at enrolment is compulsory.",
+      "Admission to Bioceb does not guarantee the applicant's first-choice study track or mobility assignment.",
+      "Incomplete applications are not considered.",
+      "The published EMJM scholarship information is for the current project and should be rechecked when the 2027-2029 call opens.",
+      "Self-funded students may be required to pay participation costs if they do not receive funding."
+    ]
+  }
+]
