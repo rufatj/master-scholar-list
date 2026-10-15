@@ -10,7 +10,7 @@
       "Chemical Engineering"
     ],
     "website": null,
-    "deadlines": [
+    "deadlines":    
       {
         "label": "Justus & Louise Scholarship",
         "date": "2026-12-01"
